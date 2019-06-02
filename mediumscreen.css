@@ -1,0 +1,14 @@
+.listRecommends{
+background-color: orange;
+align-items:center
+}
+
+.listItems{
+    background-color:aqua;
+
+}
+
+.listText{
+    float:right;
+    background: yellow;
+}

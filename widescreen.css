@@ -1,0 +1,18 @@
+/*Destination Favourite Page Styling*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+.listRecommends{
+    background-color: purple;
+    }
+
+.listItems{
+    background-color:green;
+    height:600px;
+    overflow: hidden;
+}
+
+.listText{
+    float:right;
+    background: salmon;
+}

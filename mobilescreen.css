@@ -1,0 +1,452 @@
+/*All Pages Styling*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+:root {
+    --calmBlack: #242424;
+    --shadowBlack: #201C1B;
+    --calmGrey: #4A4A4A;
+    --Grey: #B6B6B6;
+    --calmWhite: #FEFEFE;
+    --deepRed: #ED1C22;
+    /*Primary*/
+    --darkDeepRed: #b20000;
+    /*Dark Version of Primary*/
+    --lightDeepRed: #ff5f4d;
+    /*Light Version of Primary*/
+    --intenseRed: #F82401;
+    --calmRed: #FF4646;
+
+
+    --bodyColour: #242424;
+    --hoverColour: #ED1C22;
+    --linkColour: #ff5f4d;
+    --contentColour: rgb(206, 206, 206);
+    --titleColour: #FEFEFE;
+
+    --fontParagraphSize:16px;
+    --fontTitleSize:30px;
+
+    /*Category Colours*/
+    --outdoorCategory:green;
+
+}
+
+body {
+    background-color: var(--bodyColour);
+}
+
+/*Nav Interaction and Hovers*/
+/*-----------------------------------------------------------------------*/
+nav {
+    padding: 0px 20px 0px;
+    color: var(--contentColour);
+    background-color:var(--bodyColour);
+    position:fixed;
+    z-index: 2;
+    width: 100vw;
+    height:100px;
+    opacity: 1;
+
+}
+
+.navLeft {
+    width: 210px;
+    padding-top:40px;
+}
+
+nav .websiteid {
+    color: var(--titleColour);
+    width: 180px;
+    padding-top: 0;
+    margin-top: 0;
+    top:20px;
+    float: left;
+    z-index: 10;
+    position:absolute;
+
+}
+
+nav .websiteid span {
+    color: var(--hoverColour);
+}
+
+nav span:hover,
+nav h1:hover {
+    text-decoration: underline;
+}
+
+/* Menu Icon*/
+nav .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+    /* Preferred icon size 24*/
+    display: inline-block;
+    line-height: 1;
+    text-transform: n one;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Website Styling*/
+    float: right;
+    color: var(--titleColour);
+    /*background: green;*/
+    position: relative;
+    top: -85px;
+}
+
+.material-icons:hover {
+    color: var(--hoverColour);
+}
+
+nav .dropdownContainer {}
+
+nav .dropdown h3 {
+    color: var(--titleColour);
+    padding-top: 10px;
+}
+
+nav .dropdown h3:hover {
+    color: var(--hoverColour);
+    text-decoration: none;
+    /*background-color: salmon;*/
+}
+
+nav .dropdown ul {
+    background-color: var(--titleColour);
+    /*background-color: salmon;*/
+}
+
+nav .dropdown ul li:hover {
+    background-color: var(--bodyColour);
+    /*background-color: salmon;*/
+}
+
+nav .dropdown li a {
+    color: var(--bodyColour);
+}
+
+nav .dropdown li a:hover {
+    color: var(--titleColour);
+    background-color: var(--hoverColour);
+}
+
+body .continer-fluid{
+    padding-top:140px;
+}
+
+/*Nav Hamburger*/
+/*-----------------------------------------------------------------------*/
+.sideNavWebsiteId {
+    color: var(--titleColour);
+    float: left;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+.sideNavWebsiteId span {
+    color: var(--hoverColour);
+}
+
+.sideNavWebsiteId:hover,
+.sideNavWebsiteId span:hover {
+    color: var(--hoverColour);
+    text-decoration: underline;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: var(--bodyColour);
+    overflow-x: hidden;
+    transition: 0s;
+    /*opacity:0.6;*/
+    padding-top: 24vh;
+    text-align: left;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 40px;
+    text-decoration: none;
+    font-size: 32px;
+    color: var(--titleColour);
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover {
+    color: var(--hoverColour);
+}
+
+.sidenav .active{
+    color:var(--hoverColour);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    margin-left: 50px;
+    transition: 1s;
+}
+
+/*SideNav Collapse menu styling*/
+/*-----------------------------------------------------------------------*/
+.sidenav .navCollapseMenuLinks a {
+    color: var(--contentColour);
+    font-size: 20px;
+}
+
+.sidenav .navCollapseMenuLinks a:hover {
+    color: var(--hoverColour);
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+/*History Explore Page Styling*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+.timeline li{
+    color:var(--titleColour);
+    list-style: none;
+}
+
+/*.timeline li:hover{
+    color:var(--linkColour);
+}*/
+
+.timeline li span{
+    padding-bottom: 0px;
+      border-bottom: 0px solid var(--linkColour);
+      line-height: 28px;
+    }
+
+    .timeline li span:hover{
+        padding-bottom: 0px;
+          border-bottom: 10px solid var(--hoverColour);
+          line-height: 28px;
+        }
+    
+
+/*Destination Favourite Page Styling*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
+.listRecommends{
+    padding: 0 20px; 
+}
+
+.listRecommends h1{
+   color:var(--titleColour);
+}
+
+.listRecommends p{
+    color:var(--contentColour);
+    font-size:var(--fontParagraphSize);
+ }
+
+ .listRecommends img{
+     width:100%;
+     height:auto;
+ }
+
+ .listItems{
+     padding:10px 0;
+ }
+
+ .listNumber{
+     color:var(--titleColour);
+     background-color:var(--bodyColour);
+     width:40px;
+     padding:5px;
+     opacity:0.8;
+     text-align: center;
+     justify-content: center;
+     position: relative;
+     z-index:1;
+     top:46px;
+ }
+
+ .attractionType{
+color:var(--linkColour);
+ }
+ .attractionName{
+     top:-10px;
+     position:relative;
+ }
+ .attractionName span{
+padding-bottom: 0px;
+  border-bottom: 8px solid var(--linkColour);
+  line-height: 48px;
+}
+
+/*.attractionName span:hover{
+      border-bottom: 8px solid var(--hoverColour);
+    }
+/*Destination Explore Page Styling*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+.map {
+    padding: 0 20px;
+    margin: 0vh 0;
+    /*height: 100%;
+        /*background-color: aqua;
+    mobile should be about 65vh, ipad about 48vh, desktop is about 55vw */
+}
+
+/* #interactiveMap {
+    width: 50vw;
+    height: auto;
+    float: left;
+}*/
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+.map__image path {
+    fill: var(--titleColour);
+    /*#a4ced2*/
+    stroke: var(--bodyColour);
+    stroke-width: 1px;
+    transition: fill 0.6s;
+}
+
+.map__image {
+    float: left;
+    padding: 0px 0 25px;
+    background-color: var(--bodyColour);
+}
+
+.map__image path.is-active {
+    fill: var(--hoverColour);
+}
+
+/*Destination List styling*/
+/*-----------------------------------------------------------------------*/
+#destinationList {
+    padding: 5% 0;
+    /*background-color:salmon;*/
+    float: right;
+    display: block;
+
+}
+
+.map__list h1 {
+    /*background-color: #a4ced2;*/
+    color: var(--titleColour);
+    margin-top: 20px;
+}
+
+.map__list li {
+    list-style: none;
+    color: var(--contentColour);
+
+}
+
+.map__list li.is-active {
+    color: var(--hoverColour);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.northIslandList {
+    /*background-color:slateblue;*/
+}
+
+.southIslandList {
+    /*background-color:skyblue;*/
+}
+
+/*Modal styling*/
+/*-----------------------------------------------------------------------*/
+/*#destinationModals .modal{
+    top:200px;
+    left:20%;}
+
+.locationModal{
+    top:600px;
+    left:30%;
+}*/
+
+.modal-header,
+.modal-body,
+.modal-footer {
+    background-color: var(--shadowBlack);
+    color: var(--contentColour);
+}
+
+.modal-content .btn-back {
+    background-color: var(--linkColour);
+    color: var(--titleColour);
+    /*background-color: green;*/
+}
+
+.modal-content .btn-back:hover {
+    background-color: var(--hoverColour);
+    color: var(--titleColour);
+    /*background-color: green;*/
+}
+
+.modal-content a {
+    color: var(--linkColour);
+}
+
+.modal-content a:hover {
+    color: var(--hoverColour);
+}
+
+.modal-body h2,
+.modal-body h2 a,
+.modal-body h2 a:hover {
+    color: var(--titleColour);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0 4px;
+    /*background-color: var(--shadowBlack);*/
+}
+
+.modal img {
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+    transition: 2.4s;
+
+}
+
+.modal .imageZoom {
+    overflow: hidden;
+    width: 100%;
+    height: 165px;
+    background-color: aqua;
+}
+
+.modal .imageZoom img:hover {
+    transform: scale(1.2);
+}
+
+.modal img:hover {
+    transform: scale(1.1);
+}
