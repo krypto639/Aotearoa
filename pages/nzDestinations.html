@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Custom stylesheet-->
     <link rel="stylesheet" href="/mobilescreen.css">
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="/widescreen.css">
-    <link rel="stylesheet" media="screen and (min-width: 720px) and (max-width: 992px)" href="/mediumscreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 1199px)" href="/widescreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 720px) and (max-width: 1199px)" href="/mediumscreen.css">
     <!--<script src='main.js'></script>-->
 </head>
 
@@ -30,12 +30,12 @@
             <!--site id-->
             <div class="dropdownContainer">
                 <div class="dropdown">
-                    <h3 class="dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">NZ Favourites
+                    <h3 class="dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Destinations NZ
                         <span class="caret"></span></h3>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">NZ
-                                Favourites</a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-2" href="exploreNZ.html">Explore NZ</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Destinations NZ</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-2" href="exploreNZ.html">Explore NZ</a>
+                        </li>
                         <!--exploreDestions.html-->
                     </ul>
                 </div>
@@ -51,6 +51,10 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)"><i class="closebtn material-icons" onclick="closeNav()">close</i></a>
 
+        <a href="/index.html">
+            <h1 class="sideNavWebsiteId"><span>Kia</span> Ora</h1>
+        </a>
+
         <a href="nzHistory.html">History</a>
 
         <a class="active" href="#">Destinations</a>
@@ -63,21 +67,27 @@
 
     </div>
 
-    <div class="continer-fluid listRecommends"><!--col-md-10 col-sm-10 col-xs-12-->
-        <img src="/_/components/destination/images/auckland_cover.jpg" alt="New Zealand image">
-        <h1>The 15 Most Beautiful Places to Visit in New Zealand</h1>
-        <p>A visit to New Zealand will expose you to some of the most beautiful – and geographically diverse –
-            landscapes out there. From rocky alpine terrains to stunningly pristine beaches, here are 15 exquisite
-            destinations you don’t want to miss.</p>
-
-        <div class="listContatiner">
-            <div class="listItems col-sm-4">
-                <div class="listDisplay">
+    <div class="continer-fluid listRecommends col-sm-8 col-md-8 col-lg-10 col-centered">
+        <!--col-md-10 col-sm-10 col-xs-12-->
+        <div class="listIntro">
+            <div class="col-lg-8 listCoverImageMask">
+                <img src="/_/components/destination/images/nzFavourites/tongariroNationalPark.jpg" alt="New Zealand image">
+            </div>
+            <div class="listIntroText col-lg-4">
+                <h1>The 15 Most Beautiful Places to Visit in New Zealand</h1>
+                <p>A visit to New Zealand will expose you to some of the most beautiful – and geographically diverse –
+                    landscapes out there. From rocky alpine terrains to stunningly pristine beaches, here are 15
+                    exquisite
+                    destinations you don’t want to miss.</p>
+            </div>
+        </div>
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
                     <h3 class="listNumber">1</h3>
                     <img src="/_/components/destination/images/nzFavourites/mtCookNationalPark.jpg"
                         alt="New Zealand image">
                 </div>
-                <div class="listText">
+                <div class="listText col-lg-4">
                     <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
                     <h1 class="attractionName"><span>Aoraki/Mt Cook National Park</span></h1>
                     <p>Hikers, mountaineers and avid nature lovers head into Aoraki/Mt Cook National Park to marvel at
@@ -88,12 +98,12 @@
             </div>
 
 
-            <div class="listItems col-sm-4">
-                <div class="listDisplay">
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
                     <h3 class="listNumber">2</h3>
                     <img src="/_/components/destination/images/nzFavourites/pihaBeach.jpg" alt="New Zealand image">
                 </div>
-                <div class="listText">
+                <div class="listText col-lg-4">
                     <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
                     <h1 class="attractionName"><span>Piha Beach</span></h1>
                     <p>Popular among surfers, landscape photographers and holidaying Aucklanders not wanting to delve
@@ -106,12 +116,12 @@
                 </div>
             </div>
 
-            <div class="listItems col-sm-4">
-                <div class="listDisplay">
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
                     <h3 class="listNumber">3</h3>
                     <img src="/_/components/destination/images/nzFavourites/capeReinga.jpg" alt="New Zealand image">
                 </div>
-                <div class="listText">
+                <div class="listText col-lg-4">
                     <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
                     <h1 class="attractionName"><span>Cape Reinga</span></h1>
                     <p>Cape Reinga is located right at the top of the North Island – though it’s not quite the
@@ -122,12 +132,12 @@
                 </div>
             </div>
 
-            <div class="listItems col-sm-4">
-                <div class="listDisplay">
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
                     <h3 class="listNumber">4</h3>
                     <img src="/_/components/destination/images/nzFavourites/lakeTekapo.jpg" alt="New Zealand image">
                 </div>
-                <div class="listText">
+                <div class="listText col-lg-4">
                     <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
                     <h1 class="attractionName"><span>Lake Tekapo</span></h1>
                     <p>During the day, Lake Tekapo dazzles with its bright blue glacial waters. At night, the area
@@ -139,12 +149,12 @@
             </div>
 
 
-            <div class="listItems col-sm-4">
-                <div class="listDisplay">
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
                     <h3 class="listNumber">5</h3>
                     <img src="/_/components/destination/images/nzFavourites/milfordSounds.jpg" alt="New Zealand image">
                 </div>
-                <div class="listText">
+                <div class="listText col-lg-4">
                     <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
                     <h1 class="attractionName"><span>Milford Sound</span></h1>
                     <p>It’s fair to say that Milford Sound is the jewel of Fiordland National Park. The secluded fiord
@@ -158,13 +168,13 @@
                 </div>
             </div>
 
-            <div class="listItems col-sm-4">
-                <div class="listDisplay">
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
                     <h3 class="listNumber">6</h3>
                     <img src="/_/components/destination/images/nzFavourites/coromandelPeninsula.jpg"
                         alt="New Zealand image">
                 </div>
-                <div class="listText">
+                <div class="listText col-lg-4">
                     <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
                     <h1 class="attractionName"><span>Coromandel Peninsula</span></h1>
                     <p>The Coromandel Peninsula is a summer holiday favourite among New Zealanders. A collection of
@@ -173,12 +183,12 @@
                 </div>
             </div>
 
-            <div class="listItems col-sm-4">
-                <div class="listDisplay">
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
                     <h3 class="listNumber">7</h3>
                     <img src="/_/components/destination/images/nzFavourites/mountTaranaki.jpg" alt="New Zealand image">
                 </div>
-                <div class="listText">
+                <div class="listText col-lg-4">
                     <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
                     <h1 class="attractionName"><span>Mount Taranaki</span></h1>
                     <p>Also known as Mount Egmont, Mount Taranaki is a quiescent stratovolcano on the western coast of
@@ -189,139 +199,146 @@
                 </div>
             </div>
 
-        </div>
-
-        <div class="listItems col-sm-4">
-            <div class="listDisplay">
-                <h3 class="listNumber">8</h3>
-                <img src="/_/components/destination/images/nzFavourites/hokitikaGorge.jpg" alt="New Zealand image">
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
+                    <h3 class="listNumber">8</h3>
+                    <img src="/_/components/destination/images/nzFavourites/hokitikaGorge.jpg" alt="New Zealand image">
+                </div>
+                <div class="listText col-lg-4">
+                    <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
+                    <h1 class="attractionName"><span>Hokitika Gorge</span></h1>
+                    <p>Located on the West Coast region of the South Island, the Hokitika Gorge is one of those amazing
+                        places that look as good as – if not better than – its pictures. A walking track 33 kilometres
+                        (20.5
+                        miles) outside of the town of Hokitika will bring you up close and personal to the gorge’s
+                        shimmering turquoise waters and dense forested surrounds. As you reach the viewing platform, a
+                        stunning swing bridge comes into view: this is the ultimate spot for a photo opportunity.</p>
+                </div>
             </div>
-            <div class="listText">
-            <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
-            <h1 class="attractionName"><span>Hokitika Gorge</span></h1>
-            <p>Located on the West Coast region of the South Island, the Hokitika Gorge is one of those amazing
-                places that look as good as – if not better than – its pictures. A walking track 33 kilometres (20.5
-                miles) outside of the town of Hokitika will bring you up close and personal to the gorge’s
-                shimmering turquoise waters and dense forested surrounds. As you reach the viewing platform, a
-                stunning swing bridge comes into view: this is the ultimate spot for a photo opportunity.</p>
-        </div>
-    </div>
 
-    <div class="listItems col-sm-4">
-        <div class="listDisplay">
-            <h3 class="listNumber">9</h3>
-            <img src="/_/components/destination/images/nzFavourites/wanaka.jpg" alt="New Zealand image">
-        </div>
-        <div class="listText">
-        <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
-        <h1 class="attractionName"><span>Wanaka</span></h1>
-        <p>With its small-town friendliness and incredible lake and alpine features, Wanaka has become a
-            much-loved getaway for those needing a breather from its dynamic cousin Queenstown. In winter,
-            Wanaka is the ideal base for skiers as the town is right en route to some of the South Island’s
-            premier resorts; summertime offers plenty of water-based activities for those wanting to admire the
-            expansive lake that gives the town its name.</p>
-        </div>
-    </div>
-
-        <div class="listItems col-sm-4">
-            <div class="listDisplay">
-                <h3 class="listNumber">10</h3>
-                <img src="/_/components/destination/images/nzFavourites/wai-O-Tapu.jpg" alt="New Zealand image">
+            <div class="listItems special1">
+                <div class="listDisplay col-lg-8">
+                    <h3 class="listNumber">9</h3>
+                    <img src="/_/components/destination/images/nzFavourites/wanaka.jpg" alt="New Zealand image">
+                </div>
+                <div class="listText col-lg-4">
+                    <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
+                    <h1 class="attractionName"><span>Wanaka</span></h1>
+                    <p>With its small-town friendliness and incredible lake and alpine features, Wanaka has become a
+                        much-loved getaway for those needing a breather from its dynamic cousin Queenstown. In winter,
+                        Wanaka is the ideal base for skiers as the town is right en route to some of the South Island’s
+                        premier resorts; summertime offers plenty of water-based activities for those wanting to admire
+                        the
+                        expansive lake that gives the town its name.</p>
+                </div>
             </div>
-            <div class="listText">
-            <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
-            <h1 class="attractionName"><span>Wai-O-Tapu</span></h1>
-            <p>Wai-O-Tapu Geothermal Wonderland is located just outside of Rotorua – a place that, throughout
-                history, has impressed visitors with its geysers and hot pools. The geothermal park is notable
-                for its showcase of colourful springs, including the vibrant Champagne Pools and the
-                fluorescent-green Devil’s Bath; as well as the spouting Lady Knox Geyser and the bubbling mud
-                pools that aptly showcase the area’s remarkable volcanic activity.</p>
-        </div>
-    </div>
 
-
-    <div class="listItems col-sm-4">
-        <div class="listDisplay">
-            <h3 class="listNumber">11</h3>
-            <img src="/_/components/destination/images/nzFavourites/nelsonLakesNationalPark.jpg"
-                alt="New Zealand image">
-        </div>
-        <div class="listText">
-        <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
-        <h1 class="attractionName"><span>Nelson Lakes National Park</span></h1>
-        <p>Set on the upper end of the South Island, Nelson Lakes National Park marks the beginning of the
-            Southern Alps. At the heart of the park you’ll encounter two breathtaking alpine lakes surrounded by
-            soaring forested valleys: Rotoiti and Rotoroa. The lakes and the surrounding parkland are highly
-            desirable spots for camping, fishing, hiking and swimming.</p>
-    </div>
-</div>
-
-    <div class="listItems col-sm-4">
-        <div class="listDisplay">
-            <h3 class="listNumber">12</h3>
-            <img src="/_/components/destination/images/nzFavourites/castlepoint.jpg" alt="New Zealand image">
-        </div>
-        <div class="listText">
-        <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
-        <h1 class="attractionName"><span>Castlepoint</span></h1>
-        <p>Castlepoint is a small seaside town on the Wairarapa coast, just north of the capital city
-            Wellington. Its lighthouse is the tallest in New Zealand – a walk to this 23-metre-high (75.5-foot)
-            beauty will expose you to some of the North Island’s most dramatic seaside views. A compelling
-            collection of fossil shells are found amid the lighthouse route; if you’re lucky you might spot some
-            native fur seals and birds hiding in full view. The sheltered lagoon at the base is another
-            highlight to check out during your visit.</p>
-        </div>
-    </div>
-
-        <div class="listItems col-sm-4">
-            <div class="listDisplay">
-                <h3 class="listNumber">13</h3>
-                <img src="/_/components/destination/images/nzFavourites/tongariroNationalPark.jpg"
-                    alt="New Zealand image">
+            <div class="listItems special2">
+                <div class="listDisplay col-lg-8">
+                    <h3 class="listNumber">10</h3>
+                    <img src="/_/components/destination/images/nzFavourites/wai-O-Tapu.jpg" alt="New Zealand image">
+                </div>
+                <div class="listText col-lg-4">
+                    <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
+                    <h1 class="attractionName"><span>Wai-O-Tapu</span></h1>
+                    <p>Wai-O-Tapu Geothermal Wonderland is located just outside of Rotorua – a place that, throughout
+                        history, has impressed visitors with its geysers and hot pools. The geothermal park is notable
+                        for its showcase of colourful springs, including the vibrant Champagne Pools and the
+                        fluorescent-green Devil’s Bath; as well as the spouting Lady Knox Geyser and the bubbling mud
+                        pools that aptly showcase the area’s remarkable volcanic activity.</p>
+                </div>
             </div>
-            <div class="listText">
-            <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
-            <h1 class="attractionName"><span>Tongariro National Park</span></h1>
-            <p>The North Island’s Tongariro National Park holds dual UNESCO World Heritage Status because of its
-                Māori cultural associations and remarkable volcanic features. The park is home to three active
-                volcanoes – Tongariro, Ngauruhoe and the ski slopes of Ruapehu – as well as the glacial Emerald
-                Lakes (best viewed by hiking the Tongariro Alpine Crossing) and the boiling mud pools of the
-                active Red Crater.</p>
+
+
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
+                    <h3 class="listNumber">11</h3>
+                    <img src="/_/components/destination/images/nzFavourites/nelsonLakesNationalPark.jpg"
+                        alt="New Zealand image">
+                </div>
+                <div class="listText col-lg-4">
+                    <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
+                    <h1 class="attractionName"><span>Nelson Lakes National Park</span></h1>
+                    <p>Set on the upper end of the South Island, Nelson Lakes National Park marks the beginning of the
+                        Southern Alps. At the heart of the park you’ll encounter two breathtaking alpine lakes
+                        surrounded by
+                        soaring forested valleys: Rotoiti and Rotoroa. The lakes and the surrounding parkland are highly
+                        desirable spots for camping, fishing, hiking and swimming.</p>
+                </div>
             </div>
-        </div>
 
-    <div class="listItems col-sm-4">
-        <div class="listDisplay">
-            <h3 class="listNumber">14</h3>
-            <img src="/_/components/destination/images/nzFavourites/marlborough.jpg" alt="New Zealand image">
-        </div>
-        <div class="listText">
-        <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
-        <h1 class="attractionName"><span>Marlborough</span></h1>
-        <p>Many people make the inter-island detour from Wellington to Marlbourough to do some wine tasting.
-            This beautiful stretch of the South Island is known for putting New Zealand’s viticulture on the
-            world map – particularly because of its pioneering cultivation of Sauvignon Blanc varietals. Besides
-            having an obvious gourmet flair, the area is an outdoors lover’s dream: if you like your hiking fix,
-            a visit to Marlbourgh Sounds and Queen Charlotte Sound will be right up your alley.</p>
-    </div>
-</div>
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
+                    <h3 class="listNumber">12</h3>
+                    <img src="/_/components/destination/images/nzFavourites/castlepoint.jpg" alt="New Zealand image">
+                </div>
+                <div class="listText col-lg-4">
+                    <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
+                    <h1 class="attractionName"><span>Castlepoint</span></h1>
+                    <p>Castlepoint is a small seaside town on the Wairarapa coast, just north of the capital city
+                        Wellington. Its lighthouse is the tallest in New Zealand – a walk to this 23-metre-high
+                        (75.5-foot)
+                        beauty will expose you to some of the North Island’s most dramatic seaside views. A compelling
+                        collection of fossil shells are found amid the lighthouse route; if you’re lucky you might spot
+                        some
+                        native fur seals and birds hiding in full view. The sheltered lagoon at the base is another
+                        highlight to check out during your visit.</p>
+                </div>
+            </div>
 
-    <div class="listItems col-sm-4">
-        <div class="listDisplay">
-            <h3 class="listNumber">15</h3>
-            <img src="/_/components/destination/images/nzFavourites/moeraki.jpg" alt="New Zealand image">
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
+                    <h3 class="listNumber">13</h3>
+                    <img src="/_/components/destination/images/nzFavourites/tongariroNationalPark.jpg"
+                        alt="New Zealand image">
+                </div>
+                <div class="listText col-lg-4">
+                    <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
+                    <h1 class="attractionName"><span>Tongariro National Park</span></h1>
+                    <p>The North Island’s Tongariro National Park holds dual UNESCO World Heritage Status because of its
+                        Māori cultural associations and remarkable volcanic features. The park is home to three active
+                        volcanoes – Tongariro, Ngauruhoe and the ski slopes of Ruapehu – as well as the glacial Emerald
+                        Lakes (best viewed by hiking the Tongariro Alpine Crossing) and the boiling mud pools of the
+                        active Red Crater.</p>
+                </div>
+            </div>
+
+            <div class="listItems">
+                <div class="listDisplay col-lg-8">
+                    <h3 class="listNumber">14</h3>
+                    <img src="/_/components/destination/images/nzFavourites/marlborough.jpg" alt="Marlborough">
+                </div>
+                <div class="listText col-lg-4">
+                    <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
+                    <h1 class="attractionName"><span>Marlborough</span></h1>
+                    <p>Many people make the inter-island detour from Wellington to Marlbourough to do some wine tasting.
+                        This beautiful stretch of the South Island is known for putting New Zealand’s viticulture on the
+                        world map – particularly because of its pioneering cultivation of Sauvignon Blanc varietals.
+                        Besides
+                        having an obvious gourmet flair, the area is an outdoors lover’s dream: if you like your hiking
+                        fix,
+                        a visit to Marlbourgh Sounds and Queen Charlotte Sound will be right up your alley.</p>
+                </div>
+            </div>
+
+            <div class="listItems listBottom">
+                <div class="listDisplay col-lg-8">
+                    <h3 class="listNumber">15</h3>
+                    <img src="/_/components/destination/images/nzFavourites/moeraki.jpg" alt="Moeraki Boulders">
+                </div>
+                <div class="listText col-lg-4">
+                    <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
+                    <h1 class="attractionName"><span>Moeraki</span></h1>
+                    <p>When one thinks of Moeraki, the first thing that comes to mind are the compelling spherical
+                        boulders
+                        scattered around Koekohe Beach. These intriguing rock features on the Otago coast aren’t just
+                        notable for their massive size; they’re also of great interest to geologists who study their
+                        phenomenal concretions – so much so, the area is part of a protected scientific reserve. The
+                        boulders are often spread in clusters and have been carved out of mudstone erosion and the
+                        beach’s
+                        turbulent waves.</p>
+                </div>
         </div>
-        <div class="listText">
-            <h4 class="attractionType" style="display:none">Attractions, Parks and garden</h4>
-            <h1 class="attractionName"><span>Moeraki</span></h1>
-            <p>When one thinks of Moeraki, the first thing that comes to mind are the compelling spherical boulders
-                scattered around Koekohe Beach. These intriguing rock features on the Otago coast aren’t just
-                notable for their massive size; they’re also of great interest to geologists who study their
-                phenomenal concretions – so much so, the area is part of a protected scientific reserve. The
-                boulders are often spread in clusters and have been carved out of mudstone erosion and the beach’s
-                turbulent waves.</p>
-        </div>
-    </div>
     </div>
     <!--Container fluid div end-->
 
@@ -330,7 +347,7 @@
     <!--<script src="_/js/bootstrap.min.js"></script>-->
 
     <!-- Latest compiled JavaScript-->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <!--<script src="_/js/jquery.min.js"></script>-->
 
 

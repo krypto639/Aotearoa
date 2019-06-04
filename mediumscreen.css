@@ -1,14 +1,15 @@
-.listRecommends{
-background-color: orange;
-align-items:center
-}
-
 .listItems{
-    background-color:aqua;
-
+    /*background-color: salmon;*/
+    padding:0px 0px;
+    margin:35px 0;
 }
 
 .listText{
-    float:right;
-    background: yellow;
+    /*background-color: red*/;  
 }
+
+/*Home Page Styling*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+

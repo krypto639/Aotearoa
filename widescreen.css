@@ -2,17 +2,46 @@
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
-.listRecommends{
-    background-color: purple;
-    }
-
-.listItems{
-    background-color:green;
-    height:600px;
-    overflow: hidden;
+.listIntro{
+    /*background-color: purple;*/
+    padding:4vw 0;
 }
 
-.listText{
-    float:right;
-    background: salmon;
+.listIntroText{
+    top:-25px;
+    position: relative;
+    max-width:373px;
+}
+
+.listItems{
+    float:left;
+    padding:0 0;
+}
+
+.listText {
+    top:45px;
+    position: relative;
+
+}
+
+.listBottom{
+    margin-bottom: 60px;
+}
+
+ .special1, .special2{
+    height:35vw;
+    width:80vw;
+    overflow:hidden;
+}
+
+.special1 .listDisplay,
+.special2 .listDisplay{
+    overflow:hidden;
+    width:52.5vw;
+    /*background-color: red;*/
+}
+
+.special1 .listDisplay img{
+    width:120%;
+    height:auto;
 }

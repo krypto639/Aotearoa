@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact</title>
+    <meta id="area_viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Latest compiled and minified Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="_/css/bootstrap.min.css">-->
+
+    <!--Google material icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Custom stylesheet-->
+    <link rel="stylesheet" href="/mobilescreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 1199px)" href="/widescreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 720px) and (max-width: 1199px)" href="/mediumscreen.css">
+    <!--<script src='main.js'></script>-->
+</head>
+
+
+    <nav>
+        <a href="/index.html">
+            <h1 class="websiteid"><span>Kia</span> Ora</h1>
+        </a>
+        <div class="navLeft">
+            <!--site id-->
+            <div class="dropdownContainer">
+                <div class="dropdown">
+                    <h3 class="dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Contact
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <i class="menuIcon material-icons" onclick="openNav()">menu</i>
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)"><i class="closebtn material-icons" onclick="closeNav()">close</i></a>
+
+        <a href="/index.html">
+            <h1 class="sideNavWebsiteId"><span>Kia</span> Ora</h1>
+        </a>
+
+        <a href="nzHistory.html">History</a>
+
+        <a href="exploreNZ.html">Destinations</a>
+
+        <a href="nzActivities.html">Activities</a>
+
+        <a href="nzEvents.html">Events</a>
+
+        <a class="active" href="#">Contact</a>
+
+    </div>
+
+
+    </div>
+
+    <div class="continer-fluid">
+
+        <div id="contactMessage" class="col-sm-9 col-md-7 col-lg-6 col-centered">
+            <h1>Thank you for your feedback. </h1>
+            <h3> We will get in touch with you soon.
+            </h3>
+        </div>
+
+        <form class="contactForm col-sm-9 col-md-8 col-lg-7 col-centered" id="contactForm" name="myForm"
+            onsubmit="validateForm()">
+
+            <div id="formMessage">
+                    <h4>*Please fill out all the form fields so we can accurately process your feedback.</h4>
+                </div>
+
+            <div class="form-group">
+                <h4 for="usr">Name</h4>
+                <input type="text" class="form-control" id="usr" name="name">
+
+                <h4 for="email">Email</h4>
+                <input type="text" class="form-control" id="email" name="email">
+
+                <h4 for="subject">Subject</h4>
+                <input type="text" class="form-control" id="subject" name="subject">
+
+                <h4 for="comment">Message</h4>
+                <textarea class="form-control" rows="8" id="comment" name="message"></textarea>
+            </div>
+            <input class="btn btn-submit" type="submit" value="Submit">
+
+        </form>
+
+    </div>
+    <!--Container fluid div end-->
+</body>
+    <!-- jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!--<script src="_/js/bootstrap.min.js"></script>-->
+
+    <!-- Latest compiled JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!--<script src="_/js/jquery.min.js"></script>-->
+
+
+    <script src="_/components/destination/app.js"></script>
+    <script src="_/components/destination/polyfill.js"></script>
+    <script>
+        // Prevent Form from sending.
+        // Jquery gets form submit and handles it here...
+        $('form').submit((event) => {
+            event.preventDefault(); // Prevents form from being sent.
+        })
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+        /*Form Validation*/
+
+        var x = document.getElementById("contactForm");
+            var y = document.getElementById("contactMessage");
+            var z = document.getElementById("formMessage");
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "none";
+
+        function validateForm() {
+            var f_Name = document.forms["myForm"]["name"].value;
+            var f_Email = document.forms["myForm"]["email"].value;
+            var f_Subject = document.forms["myForm"]["subject"].value;
+            var f_Message = document.forms["myForm"]["message"].value;
+
+           if (f_Name !== "" && f_Email !== "" && f_Subject !== "" && f_Message !== "") {
+                y.style.display = "block";
+                x.style.display = "none";
+            }else if (f_Name == "" || f_Email=="" || f_Subject=="" || f_Message=="" ) {
+                z.style.display = "block";
+            }
+    }
+    </script>
+
+<body>
+
+
+</html>

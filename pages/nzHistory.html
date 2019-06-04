@@ -4,35 +4,40 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Aotearoa</title>
+    <title>Top 12 Events which impacted New Zealand</title>
     <meta id="area_viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Latest compiled and minified Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <!--<link rel="stylesheet" href="_/css/bootstrap.min.css">-->
-    
+
     <!--Google material icons-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Custom stylesheet-->
     <link rel="stylesheet" href="/mobilescreen.css">
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="/widescreen.css">
-    <link rel="stylesheet" media="screen and (max-width: 720px)" href="/mediumscreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 1199px)" href="/widescreen.css">
+    <link rel="stylesheet" media="screen and (min-width: 720px) and (max-width: 1199px)" href="/mediumscreen.css">
     <!--<script src='main.js'></script>-->
 </head>
 
 <body>
 
-    <nav>
-            <a href="/index.html"><h1 class="websiteid"><span>Kia</span> Ora</h1></a>
+    <nav id="navbar">
+        <a href="/index.html">
+            <h1 class="websiteid"><span>Kia</span> Ora</h1>
+        </a>
         <div class="navLeft">
             <!--site id-->
             <div class="dropdownContainer">
                 <div class="dropdown">
-                    <h3 class="dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">Explore History
+                    <h3 class="dropdown-toggle" id="menu1" type="button" data-toggle="dropdown">NZ History
                         <span class="caret"></span></h3>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="pages/nzDestinations.html">NZ History </a></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-2" href="/pages/exploreNZ.html">Explore History</a></li><!--exploreDestions.html-->
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">NZ
+                                Favourites</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-2" href="nzTimeline.html">NZ Timeline</a>
+                        </li>
+                        <!--exploreDestions.html-->
                     </ul>
                 </div>
             </div>
@@ -47,9 +52,13 @@
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)"><i class="closebtn material-icons" onclick="closeNav()">close</i></a>
 
+        <a href="/index.html">
+            <h1 class="sideNavWebsiteId"><span>Kia</span> Ora</h1>
+        </a>
+
         <a class="active" href="#">History</a>
 
-        <a href="nzDestinations.html">Destinations</a>
+        <a href="exploreNZ.html">Destinations</a>
 
         <a href="nzActivities.html">Activities</a>
 
@@ -59,107 +68,238 @@
 
     </div>
 
-
-    </div>
-
-    <div class="continer-fluid">
-        <!--Map and List-->
-        <div id="timelinea" class="timeline">
-            <ul>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>2010's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>2000's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1990's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1980's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1970's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1960's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1950's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1940's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1930's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1920's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1910's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1900's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1890's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1880's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1870's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1860's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1850's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1840's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1830's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1820's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1810's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1800's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1700's</span></h1></li>
-                <li data-toggle="modal" data-target="#history_2010s"><h1><span>1600's</span></h1></li>
-                
-            </ul>
+    <div id="historyTop_12" class="continer-fluid listRecommends col-sm-8 col-md-8 col-lg-10 col-centered">
+        <!--col-md-10 col-sm-10 col-xs-12-->
+        <div class="listIntro">
+            <div class="col-lg-8 listCoverImageMask">
+                <img src="/_/components/history/images/historyTop_12/nzWars3.jpg" alt="New Zealand image">
             </div>
-            <!--Map End-->
-
-        <!--Modals History-->
-        <div id="historyModals">
-
-        <!--2010's Modal-->
-        <div class="modal fade historyModal col-md-8" id="history_2010s">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <!--<h4 class="back" data-dismiss="modal"><a href="#">Back</a></h4>-->
-                        <ul class="nav nav-tabs">
-                                <li class="active"><a data-toggle="tab" href="#historySummary2010s">Summary</a></li>
-                                <li><a data-toggle="tab" href="#eventsOf2010s">Events</a></li>
-                              </ul>
-
-                              <div class="tab-content">
-                                    <div id="historySummary2010s" class="tab-pane fade in active">
-                                      <h3>New Zealand 2010's</h3>
-                                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                      <ul>
-                                          <li data-toggle="modal" data-target="#event1_2010s" data-dismiss="#history_2010s"><span>Christchurch Terror Attacks</span></li>
-                                      </ul>
-                                    </div>
-                                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    </div>
-                                  </div>
-                                </div>
-
-                        
-                        <br>
-                        <div class="modalButtons">
-                            <!--<button type="button" class="btn btn-back" data-dismiss="modal">Explore Northland</button>-->
-                            <button type="button" class="btn btn-back" data-dismiss="modal">Back</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="listIntroText col-lg-4">
+                <h1>12 Moments That Shaped New Zealand's History</h1>
+                <p>New Zealand is a young country with a colourful history. Archaeological findings trace the first
+                    human settlement to have occurred around 1280-1300AD; the first Maori are believed to have arrived
+                    in the late 13th century; the first European contact was made in 1642 (with the arrival of Abel
+                    Tasman) and 1769 (James Cooks’ voyage) respectively. A number of moments shaped the country
+                    thereafter – here are 12 key points you should know about.</p>
             </div>
         </div>
-        <!--Auckland Modal End-->
-       
-    </div>
-    <!--Modals Destination End-->
+        <div class="listItems">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">1</h3>
+                <img src="/_/components/history/images/historyTop_12/treatyOfWaitangiSigning.jpg"
+                    alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">New Zealand</h4>
+                <h1 class="attractionName"><span>1840: The Treaty of Waitangi signing</span></h1>
+                <p>New Zealand’s founding document, known as the Treaty of Waitangi, is an agreement between the British
+                    Crown and the some 540 Maori rangatira (chiefs). Historically, this was a controversial document
+                    because the Maori and English versions stipulated different things about land ownership rights and
+                    sovereignty. In present times, the Treaty is fully honoured in legislation and court proceedings.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="listItems">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">2</h3>
+                <img src="/_/components/history/images/historyTop_12/nzWars.jpeg" alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">January</h4>
+                <h1 class="attractionName"><span>1845-72: The New Zealand Wars</span></h1>
+                <p>A series of land wars in the 19th century brought drastic changes to New Zealand society. Between the
+                    1820s and 1830s, the inter-tribal Musket Wars decimated many Maori iwi (tribes) and led to a number
+                    of land ownership complications. This, along with the Treaty of Waitangi, paved the way for the New
+                    Zealand Wars – a collection of conflicts between European settlers and Maori who wanted to protect
+                    their territories. Most of the casualties during the New Zealand Wars were Maori.</p>
+            </div>
+        </div>
+
+        <div class="listItems special1">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">3</h3>
+                <img src="/_/components/history/images/historyTop_12/womenTheRightToVote.jpg" alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">March</h4>
+                <h1 class="attractionName"><span>1893: New Zealand gives women the right to vote</span></h1>
+                <p>On 19 September 1893, New Zealand became the first self-governing country to give women the right to
+                    vote in parliamentary elections. The Electoral Act was signed into law by then-governor Lord Glasgow
+                    and came about after years of suffrage movements and petitions. These campaigns were led by Kate
+                    Sheppard and inspired by the American-based Women’s Christian Temperance Union.</p>
+            </div>
+        </div>
+
+        <div class="listItems special2">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">4</h3>
+                <img src="/_/components/history/images/historyTop_12/gallipoliCampaign.jpg" alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">March</h4>
+                <h1 class="attractionName"><span>1914: World War I and The Gallipoli Campaign</span></h1>
+                <p>It is generally agreed that the Gallipoli during the First World War fostered a sense of national
+                    identity in New Zealand and Australia. One in four New Zealand men between the ages of 20 and 45 who
+                    were sent to battle were either killed or wounded – this in turn affected many families and
+                    communities back home. In Gallipoli, there were 2,779 New Zealand casualties, as well as 8,700
+                    Australian deaths. ANZAC Day on 25 April remembers the death of these soldiers.</p>
+            </div>
+        </div>
+
+        <div class="listItems">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">5</h3>
+                <img src="/_/components/history/images/historyTop_12/hawkesBayEarthquake.jpg" alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">March/April</h4>
+                <h1 class="attractionName"><span>1931: The Hawke’s Bay Earthquake</span></h1>
+                <p>On 3 February 1931, the Hawke’s Bay region was struck by New Zealand’s deadliest earthquake. Napier
+                    and Hastings were hit the hardest by the 7.8 magnitude quake, which took the lives of at least 256
+                    people – some unofficial accounts place the number at around 258. As a silver lining, the rebuild
+                    efforts transformed the Hawke’s Bay into a thriving Art Deco region.</p>
+            </div>
+        </div>
+
+
+        <div class="listItems">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">6</h3>
+                <img src="/_/components/history/images/historyTop_12/independenceOfNewZealand.jpg"
+                    alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">April</h4>
+                <h1 class="attractionName"><span>1947: New Zealand gains independence from Britain</span></h1>
+                <p>New Zealand stopped being a colony in 1907, when it was officially recognised as a British Empire
+                    dominion. This, however, did not make any difference to the country in terms of legal or political
+                    standing – at the time, very few New Zealanders wanted full independence from Britain. While the
+                    Statute of Westminster 1931 removed London’s right to legislate for British dominions without
+                    explicit permission, New Zealand chose not to ratify the document until 1947.</p>
+            </div>
+        </div>
+
+        <div class="listItems">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">7</h3>
+                <img src="/_/components/history/images/historyTop_12/theDawnRaids.jpg" alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">April</h4>
+                <h1 class="attractionName"><span>1970s: The Dawn Raids</span></h1>
+                <p>The Dawn Raids are known for being one of the darkest moments in New Zealand race relations. Between
+                    1974 and 1976, the police began raiding the homes of suspected ‘overstayers’ – temporary workers
+                    with expired visas. This was usually done at night or in the early hours of the morning. Samoan and
+                    Tongan migrants were singled out, despite the fact that many temporary immigrants had actually come
+                    from Australia and Britain.</p>
+            </div>
+        </div>
+
+        <div class="listItems">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">8</h3>
+                <img src="/_/components/history/images/historyTop_12/sinkingOfTheRainbowWarrior.jpg"
+                    alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">May</h4>
+                <h1 class="attractionName"><span>1985: The sinking of the Rainbow Warrior</span></h1>
+                <p>New Zealand had a well-established anti-nuclear stance by the mid 1980s. The Rainbow Warrior bombing
+                    was the first act of terrorism in New Zealand territory – and, while it was targeted at Greenpeace
+                    protests against nuclear testing, New Zealanders took the attack personally. This ultimately led to
+                    deteriorating relations between New Zealand and France for the remainder of the 20th century. In
+                    2015, the French intelligence agent involved in the attack made a public apology for his actions.
+                </p>
+            </div>
+        </div>
+
+        <div class="listItems">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">9</h3>
+                <img src="/_/components/history/images/historyTop_12/introductionOfTheMMP_VotingSystem.png"
+                    alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">June/July</h4>
+                <h1 class="attractionName"><span>1993: The introduction of the MMP voting system</span></h1>
+                <p>A binding referendum in 1993 led New Zealand to change its voting system from the traditional first
+                    past the post (FPP) approach to the more inclusive mixed-member proportional (MMP) method. This is
+                    touted as being the most dramatic change in New Zealand’s electoral history after the women’s
+                    suffrage movement – allowing more political parties to emerge, thus enabling parliament to become
+                    more representative of the society at large.</p>
+            </div>
+        </div>
+
+        <div class="listItems">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">10</h3>
+                <img src="/_/components/history/images/historyTop_12/firstFemalePrimeMinisterJennyShipley.jpg"
+                    alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">November</h4>
+                <h1 class="attractionName"><span>1997: New Zealand’s first woman Prime Minister came to power</span>
+                </h1>
+                <p>Jenny Shipley became New Zealand’s first female Prime Minister after a successful campaign to oust
+                    her predecessor, Jim Bolger. Between 1990 and 1997, she held several ministerial portfolios,
+                    including Women’s Affairs, social welfare and health – these last two being the ones where she
+                    caused the most controversy. Shipley left parliament in 1998, paving the way for the first elected
+                    women Prime Minister, Helen Clark, to come to power in 1999.</p>
+            </div>
+        </div>
+
+        <div class="listItems special3">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">11</h3>
+                <img src="/_/components/history/images/historyTop_12/foreshoreAndSeabedAct.jpg" alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">November</h4>
+                <h1 class="attractionName"><span>2004: The introduction of the Foreshore and Seabed Act</span>
+                </h1>
+                <p>Disputes over Maori rights to the foreshore (the land that is covered by the tide) and the seabed
+                    (the part of the ocean around the coast) can be traced back to early colonial times. But it was a
+                    court case brought by Maori in the Marlborough Sounds in 1997 that led to the establishment of the
+                    Foreshore and Seabed Act 2004, which cemented the Crown’s ownership status of the land. After
+                    several protests and ongoing debates, the act was repealed and replaced with the ‘no ownership’
+                    regime of the Marine and Coastal Area (Takutai Moana) Act 2011.</p>
+            </div>
+        </div>
+
+        <div class="listItems">
+            <div class="listDisplay col-lg-8">
+                <h3 class="listNumber">12</h3>
+                <img src="/_/components/history/images/historyTop_12/christchurchEarthquakes.jpg"
+                    alt="New Zealand image">
+            </div>
+            <div class="listText col-lg-4">
+                <h4 class="attractionType" style="display:none;">November</h4>
+                <h1 class="attractionName"><span>2010 and 2011: The Canterbury and Christchurch earthquakes</span>
+                </h1>
+                <p>While the September 2010 Canterbury earthquake had no casualties, it was the largest to affect an
+                    urban area since the one in Hawke’s Bay – destroying many properties across the region. In 2011, the
+                    Christchurch quake surpassed that – with a 6.3 magnitude and a death toll of 185, this was New
+                    Zealand’s worst natural disaster in terms of human lives lost since 1931. Christchurch’s
+                    reconstruction efforts are ongoing.</p>
+            </div>
+        </div>
     </div>
     <!--Container fluid div end-->
 
-    <!--<button class="btn btn-success" data-toggle="modal" data-target="#d_Wellington"
-            onmouseover="$(this).hide();">Click me!</button>-->
-
-    <!-- jQuery library--> 
+    <!-- jQuery library-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!--<script src="_/js/bootstrap.min.js"></script>--> 
-    
-    <!-- Latest compiled JavaScript--> 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+    <!--<script src="_/js/bootstrap.min.js"></script>-->
+
+    <!-- Latest compiled JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <!--<script src="_/js/jquery.min.js"></script>-->
 
 
     <script src="_/components/destination/app.js"></script>
     <script src="_/components/destination/polyfill.js"></script>
     <script>
-        /*function mouseHover() {
-            $('#interactiveMap path').click(function () { //can change click to hover and will display in move
-                console.log(this.attributes.name.nodeValue)
-            })
-        } //End of code to make list change colour on map hover
-*/
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
         }
