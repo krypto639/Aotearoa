@@ -45,3 +45,36 @@
     width:120%;
     height:auto;
 }
+
+
+/*Destination Explore Page Styling*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+svg {
+    max-height: 80vh;
+}
+
+/*Destination Explore Page Styling*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+#destinationModals .modal .listItems{
+  float:none;
+}
+
+#destinationModals .modal .listText {
+    top:0;
+    margin-bottom:0;
+    position: none;
+}
+
+.locationModal{
+    max-width:500px;
+    width:45vw;
+    height:90vh;
+    overflow:scroll;
+    float:right;
+    margin-top:80px;
+    margin-right:10vw;
+}
