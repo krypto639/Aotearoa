@@ -1,3 +1,8 @@
+/*All List Page Styling*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+
 .listItems{
     /*background-color: salmon;*/
     padding:0px 0px;
@@ -16,7 +21,8 @@
 #home .coverImage{
     /*background-color: green;*/
     overflow:hidden;
-    height:60vw;
+    min-height:500px;
+    height:70vw;
     margin:5vw auto 7vw;
 
 }
@@ -38,7 +44,7 @@ width:;
 
 .homeText{
     /*background-color: yellow;*/
-    top:-18vh;
+    top:-22vw;
 }
 
 /*Destination Explore Page Styling*/

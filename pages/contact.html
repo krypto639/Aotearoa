@@ -5,6 +5,9 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Contact</title>
+    <meta name="description" content="Please contact us with any feedback. Let us know any content you'd be interested in seeing covered in future to give you the best source for your New Zealand experiece.">
+    <meta name="keywords" content="Contact, Kia Ora, New Zealand">
+    <meta name="author" content="Kyle  Whyte, Kia Ora, Vision College">
     <meta id="area_viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--Latest compiled and minified Bootstrap CSS-->
@@ -80,15 +83,19 @@
             <div class="form-group">
                 <h4 for="usr">Name</h4>
                 <input type="text" class="form-control" id="usr" name="name">
-                <p id="errorName"></p>
+                <p id="errorName" class="error">*This form requires a name</p>
+
                 <h4 for="email">Email</h4>
                 <input type="text" class="form-control" id="email" name="email">
+                <p id="errorEmail" class="error">*Please enter a valid email</p>
 
                 <h4 for="subject">Subject</h4>
                 <input type="text" class="form-control" id="subject" name="subject">
+                <p id="errorSubject" class="error">*Please input a subject so we may better understand your message</p>
 
                 <h4 for="comment">Message</h4>
                 <textarea class="form-control" rows="8" id="comment" name="message"></textarea>
+                <p id="errorFeedback" class="error">*This message is empty. Please input your message to us</p>
             </div>
             <input class="btn btn-submit" type="submit" value="Submit">
 
@@ -115,6 +122,7 @@
             event.preventDefault(); // Prevents form from being sent.
         })
 
+        // SideNav opening
         function openNav() {
             document.getElementById("mySidenav").style.width = "100%";
         }
@@ -122,14 +130,24 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
+        
         /*Form Validation*/
-
         var x = document.getElementById("contactForm");
             var y = document.getElementById("contactMessage");
             var z = document.getElementById("formMessage");
-            x.style.display = "block";
             y.style.display = "none";
             z.style.display = "none";
+
+            errorName = document.getElementById("errorName");
+            errorEmail = document.getElementById("errorEmail");
+            errorSubject = document.getElementById("errorSubject");
+            errorMessage = document.getElementById("errorFeedback");
+
+            errorName.style.display="none";
+            errorEmail.style.display="none";
+            errorSubject.style.display="none";
+            errorMessage.style.display="none";
+
 
         function validateForm() {
             var f_Name = document.forms["myForm"]["name"].value;
@@ -140,9 +158,36 @@
            if (f_Name !== "" && f_Email !== "" && f_Subject !== "" && f_Message !== "") {
                 y.style.display = "block";
                 x.style.display = "none";
-            }else if (f_Name == "" || f_Email=="" || f_Subject=="" || f_Message=="" ) {
-                z.style.display = "block";
+           }else{
+
+            if (f_Name == "") {
+                /*z.style.display = "block";*/
+                errorName.style.display="block";
+            }else {
+                errorName.style.display="none"; 
             }
+
+            if (f_Email=="") {
+                /*z.style.display = "block";*/
+                errorEmail.style.display="block";
+            }else {
+                errorEmail.style.display="none"; 
+            }
+
+            if (f_Subject=="") {
+                /*z.style.display = "block";*/
+                errorSubject.style.display="block";
+            }else {
+                errorSubject.style.display="none"; 
+            }
+
+            if (f_Message=="" ) {
+                /*z.style.display = "block";*/
+                errorMessage.style.display="block";
+            }else {
+                errorMessage.style.display="none"; 
+            }
+           }
     }
     </script>
 

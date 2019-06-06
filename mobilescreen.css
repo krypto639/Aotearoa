@@ -24,7 +24,7 @@
     --contentColour: rgb(206, 206, 206);
     --titleColour: #FEFEFE;
 
-    --titleFont: 'Arvo', serif;
+    --titleFont: 'Domine', serif;
     
     /*font-family: 'Domine', serif;
     font-family: 'PT Serif', serif;
@@ -242,17 +242,18 @@ body .continer-fluid {
 #home .coverImage{
     /*background-color: green;*/
     overflow:hidden;
-    height:82vh;
+    min-height:400px;
+    height:95vw;
     margin-bottom:20px;
 }
 
 #home .coverImgMask{
 overflow:hidden;
-height:80vh;
+height:;
 width:;
 }
 
-.tabletCoverImg, .desktopCoverImg{
+.tabletCoverImg, .mobileCoverImg{
     display:none;
 }
 
@@ -306,7 +307,7 @@ transition:2.2s;
     max-width:350px;
     margin:auto;
     position:relative;
-    top:-25vh;
+    top:0vw;
 }
 
 /*History Explore Page Styling*/
@@ -624,6 +625,13 @@ svg {
 .contactForm textarea {
     background-color: var(--titleColour);
     color: var(--bodyColour);
+}
+
+.error{
+    margin:5px 0;
+    font-size:14px;
+    color:var(--hoverColour);
+    font-family:var(--titleFont);
 }
 
 .contactForm .btn-submit {
