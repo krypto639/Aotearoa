@@ -55,10 +55,6 @@ svg {
     max-height: 80vh;
 }
 
-/*Destination Explore Page Styling*/
-/*-----------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------*/
-/*-----------------------------------------------------------------------*/
 #destinationModals .modal .listItems{
   float:none;
 }
@@ -77,4 +73,36 @@ svg {
     float:right;
     margin-top:80px;
     margin-right:10vw;
+}
+
+/*Home Page Styling*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+#home .coverImage{
+    /*background-color: green;*/
+    overflow:hidden;
+    height:46vw;
+    margin:5vw auto 7vw;
+
+}
+
+#home .coverImgMask{
+overflow:hidden;
+height:45vw;
+width:;
+/*background-color: yellow;*/
+}
+
+.desktopCoverImg{
+    display:block;
+}
+
+.mobileCoverImg, .tabletCoverImg{
+    display:none;
+}
+
+.homeText{
+    /*background-color: yellow;*/
+    top:-15vw;
 }

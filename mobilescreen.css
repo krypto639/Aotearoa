@@ -24,42 +24,19 @@
     --contentColour: rgb(206, 206, 206);
     --titleColour: #FEFEFE;
 
-    --fontParagraphSize: 16px;
-    --fontTitleSize: 30px;
-
-    /*Category Colours*/
-    /*History*/
-    --historyPolitic: green;
-    --historySport: green;
-    --historyBusiness: green;
-    --historyConflict-Disasters: green;
-    --historyNZ: green;
-    --historyMaori: green;
-    /*Destinations*/
-    --destinationHistoric: green;
-    --destinationShop: green;
-    --destinationFood: green;
-    --destinationAttractions: green;
-    /*Activites*/
-    --activitesAdventure: green;
-    --activitesWater: green;
-    --activitesHiking: green;
-    --activitesFood: green;
-    --activitesLuxury: green;
-    /*Events*/
-    --eventsConcerts: green;
-    --eventsExhibitions: green;
-    --eventsFestival: green;
-    --eventsPerforming: green;
-    --eventsSports: green;
-    --eventsWorkshop: green;
+    --titleFont: 'Arvo', serif;
+    
+    /*font-family: 'Domine', serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Neuton', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Arvo', serif;*/
 
 }
 
 body {
     background-color: var(--bodyColour);
 }
-
 
 
 /*Nav Interaction and Hovers*/
@@ -83,6 +60,7 @@ nav {
 
 nav .websiteid {
     color: var(--titleColour);
+    font-family: var(--titleFont);
     width: 180px;
     padding-top: 0;
     margin-top: 0;
@@ -134,6 +112,7 @@ nav .dropdownContainer {}
 nav .dropdown h3 {
     color: var(--titleColour);
     padding-top: 10px;
+    font-family: var(--titleFont);
 }
 
 nav .dropdown h3:hover {
@@ -153,6 +132,7 @@ nav .dropdown ul li:hover {
 }
 
 nav .dropdown li a {
+    font-family: var(--titleFont);
     color: var(--bodyColour);
 }
 
@@ -173,6 +153,7 @@ body .continer-fluid {
     position: absolute;
     top: 0px;
     left: 20px;
+    font-family: var(--titleFont);
 }
 
 .sideNavWebsiteId span {
@@ -204,6 +185,7 @@ body .continer-fluid {
     padding: 8px 8px 8px 40px;
     text-decoration: none;
     font-size: 32px;
+    font-family: var(--titleFont);
     color: var(--titleColour);
     display: block;
     transition: 0.3s;
@@ -232,6 +214,7 @@ body .continer-fluid {
 .sidenav .navCollapseMenuLinks a {
     color: var(--contentColour);
     font-size: 20px;
+    transition:0.5s;
 }
 
 .sidenav .navCollapseMenuLinks a:hover {
@@ -252,11 +235,92 @@ body .continer-fluid {
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
+#home{
+    padding-top:100px;
+}
+
+#home .coverImage{
+    /*background-color: green;*/
+    overflow:hidden;
+    height:82vh;
+    margin-bottom:20px;
+}
+
+#home .coverImgMask{
+overflow:hidden;
+height:80vh;
+width:;
+}
+
+.tabletCoverImg, .desktopCoverImg{
+    display:none;
+}
+
+#home img{
+width:100%;
+height:auto;
+transition:2.2s;
+}
+
+#home img:hover{
+    width:100%;
+    height:auto;
+    transform:scale(1.2);
+    }
+
+#home h1{
+    color:var(--titleColour);
+    font-family: var(--titleFont);
+    margin-bottom:25px;
+    text-align:center;
+    transition:0.3s;
+}
+
+#home h1:hover {
+    color:var(--hoverColour);
+}
+
+#home h1 span {
+    padding-bottom: 0px;
+    border-bottom: 10px solid var(--linkColour);
+    line-height: 24px;
+    transition:0.3s;
+}
+
+#home h1 span:hover {
+    border-bottom: 10px solid var(--hoverColour);
+}
+
+
+
+#home h4{
+    color:var(--titleColour);
+    font-family: var(--titleFont);
+    text-align:center;
+    line-height: 26px;
+}
+
+.homeText{
+    /*background-color: yellow;*/
+    width:100%;
+    max-width:350px;
+    margin:auto;
+    position:relative;
+    top:-25vh;
+}
 
 /*History Explore Page Styling*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
+
+#timeline{
+    overflow-x: hidden;
+    width:5500px;
+    height:90vh;
+
+}
+
 
 .timeline li,
 .timeline li a {
@@ -282,6 +346,7 @@ body .continer-fluid {
 
 .timeline .panel-title {
     font-size: 44px;
+    font-family: var(--titleFont);
 }
 
 .timeline .panel-title span {
@@ -310,6 +375,7 @@ body .continer-fluid {
 
 .timeline .panel-body {
     color: var(--contentColour);
+    text-align:center;
 }
 
 .timeline .panel-heading {
@@ -321,9 +387,12 @@ body .continer-fluid {
 .timeline .panel {
     background-color: var(--bodyColour);
     border: none;
+    float:left;
+    padding:0 25px;
+    justify-content:center;
 }
 
-/*Destination Favourite Page Styling*/
+/*All List Top Page Styling*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
@@ -334,6 +403,8 @@ body .continer-fluid {
 
 .listRecommends h1 {
     color: var(--titleColour);
+    font-family: var(--titleFont);
+    text-align:center;
 }
 
 .listRecommends p {
@@ -365,6 +436,7 @@ body .continer-fluid {
 
 .attractionType {
     color: var(--linkColour);
+    text-align: center;
 }
 
 .attractionName {
@@ -381,6 +453,7 @@ body .continer-fluid {
 /*.attractionName span:hover{
       border-bottom: 8px solid var(--hoverColour);
     }
+
 /*Destination Explore Page Styling*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
@@ -388,16 +461,8 @@ body .continer-fluid {
 .map {
     padding: 0 20px;
     margin: 0vh 0;
-    /*height: 100%;
-        /*background-color: aqua;
-    mobile should be about 65vh, ipad about 48vh, desktop is about 55vw */
 }
 
-/* #interactiveMap {
-    width: 50vw;
-    height: auto;
-    float: left;
-}*/
 
 svg {
     width: 100%;
@@ -434,7 +499,9 @@ svg {
 .map__list h1 {
     /*background-color: #a4ced2;*/
     color: var(--titleColour);
+    font-family: var(--titleFont);
     margin-top: 20px;
+    
 }
 
 .map__list li {
@@ -449,24 +516,9 @@ svg {
     text-decoration: underline;
 }
 
-.northIslandList {
-    /*background-color:slateblue;*/
-}
-
-.southIslandList {
-    /*background-color:skyblue;*/
-}
 
 /*Modal styling*/
 /*-----------------------------------------------------------------------*/
-/*#destinationModals .modal{
-    top:200px;
-    left:20%;}
-
-.locationModal{
-    top:600px;
-    left:30%;
-}*/
 
 .modal-header,
 .modal-body,
@@ -510,6 +562,7 @@ svg {
 }
 
 .modal .attractionTitleName span {
+    font-family: var(--titleFont);
     padding-bottom: 0px;
     border-bottom: 8px solid var(--linkColour);
     line-height: 48px;
@@ -519,7 +572,8 @@ svg {
     top: -10px;
     position: relative;
     color:var(--titleColour);
-    /*text-align: center;*/
+    font-family: var(--titleFont);
+    text-align: center;
 }
 
 .modal .attractionName span {
@@ -562,6 +616,7 @@ svg {
 
 
 .contactForm h4 {
+    font-family: var(--titleFont);
     color: var(--titleColour);
 }
 
@@ -574,6 +629,8 @@ svg {
 .contactForm .btn-submit {
     background-color: var(--linkColour);
     color: var(--titleColour);
+    font-family: var(--titleFont);
+
 }
 
 .contactForm .btn-submit:hover {

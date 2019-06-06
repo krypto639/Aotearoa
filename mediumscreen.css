@@ -8,10 +8,38 @@
     /*background-color: red*/;  
 }
 
+
 /*Home Page Styling*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------*/
+#home .coverImage{
+    /*background-color: green;*/
+    overflow:hidden;
+    height:60vw;
+    margin:5vw auto 7vw;
+
+}
+
+#home .coverImgMask{
+overflow:hidden;
+height:100%;
+width:;
+/*background-color: yellow;*/
+}
+
+.desktopCoverImg{
+    display:block;
+}
+
+.mobileCoverImg, .tabletCoverImg{
+    display:none;
+}
+
+.homeText{
+    /*background-color: yellow;*/
+    top:-18vh;
+}
 
 /*Destination Explore Page Styling*/
 /*-----------------------------------------------------------------------*/
