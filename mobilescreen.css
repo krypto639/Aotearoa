@@ -508,6 +508,7 @@ svg {
 .map__list li {
     list-style: none;
     color: var(--contentColour);
+    font-size:16px;
 
 }
 
